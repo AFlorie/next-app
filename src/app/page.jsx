@@ -16,11 +16,25 @@ const Home = () => {
           <button className={styles.button}>Contact</button>
         </div>
         <div className={styles.brands}>
-          <Image className={styles.brandImg} src="/brands.png" alt="" fill />
+          <Image
+            className={styles.brandImg}
+            src="/brands.png"
+            alt=""
+            fill
+            sizes="50vw"
+          />
         </div>
       </div>
       <div className={styles.imgContainer}>
-        <Image className={styles.heroImg} src="/hero.gif" alt="" fill />
+        <Image
+          className={styles.heroImg}
+          src="/hero.gif"
+          alt=""
+          width={0}
+          height={0}
+          sizes="100vw"
+          priority={true}
+        />
       </div>
     </div>
   );

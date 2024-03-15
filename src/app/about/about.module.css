@@ -1,16 +1,6 @@
 .container {
   display: flex;
-  align-items: center;
   gap: 100px;
-}
-
-.imgContainer {
-  flex: 1;
-  position: relative;
-}
-
-.img {
-  object-fit: contain;
 }
 
 .textContainer {
@@ -35,8 +25,8 @@
 
 .boxes {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .box {
@@ -47,4 +37,25 @@
 
 .box h3 {
   color: var(--btn);
+}
+
+.imgContainer {
+  flex: 1;
+  position: relative;
+}
+
+.img {
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .boxes {
+    flex-direction: column;
+    gap: 50px;
+  }
 }

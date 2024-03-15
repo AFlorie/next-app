@@ -31,7 +31,13 @@ const About = () => {
         </div>
       </div>
       <div className={styles.imgContainer}>
-        <Image className={styles.img} src="/about.png" alt="About Image" fill />
+        <Image
+          className={styles.img}
+          src="/about.png"
+          alt="About Image"
+          fill
+          sizes="100vw"
+        />
       </div>
     </div>
   );

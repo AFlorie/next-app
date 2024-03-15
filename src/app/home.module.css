@@ -16,6 +16,11 @@
   flex: 1;
 }
 
+.heroImg {
+  width: 100%;
+  height: auto;
+}
+
 .brands {
   position: relative;
   width: 500px;
@@ -24,7 +29,7 @@
 }
 
 .title {
-  font-size: 96px;
+  font-size: 84px;
 }
 
 .description {
@@ -47,4 +52,25 @@
 .button:first-child {
   background-color: var(--btn);
   color: var(--text);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 64px;
+  }
+
+  .brands {
+    width: 100%;
+  }
 }
