@@ -1,17 +1,12 @@
-"use client";
 import Image from "next/image";
 import styles from "./contact.module.css";
-import { useEffect, useState } from "react";
+
+export const metadata = {
+  title: "Contact",
+  description: "Contact me",
+};
 
 const Contact = () => {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  const a = Math.random();
-
   return (
     <div className={styles.container}>
       <div className={styles.imgContainer}>
@@ -37,8 +32,7 @@ const Contact = () => {
             placeholder="Phone number (optional)"
           />
           <textarea name="" id="" cols="30" rows="10" placeholder="Message" />
-          {isClient && a}
-          <button onClick={() => console.log("clicked")}>Send</button>
+          <button>Send</button>
         </form>
       </div>
     </div>
